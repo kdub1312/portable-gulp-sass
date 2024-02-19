@@ -1,0 +1,23 @@
+.headline-1 {
+    color: $bfc-blue;
+    font-family: $boston-light;
+    font-weight: normal;
+    font-family: "Boston Bold","Open Sans",Georgia,sans-serif;
+    font-weight: normal;
+}
+.headline-2 {
+    color: $bfc-purple;
+    font-family: $boston-light;
+    font-weight: normal;
+}
+.text-color--purple {
+    color: $bfc-purple;
+}
+
+.text--upper {
+    text-transform: uppercase;
+}
+
+p b {
+    font-family: $boston-bold;
+}
