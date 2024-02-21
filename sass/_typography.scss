@@ -9,6 +9,8 @@
     color: $bfc-purple;
     font-family: $boston-light;
     font-weight: normal;
+    font-size: 24px;
+    line-height: 31px;
 }
 .text-color--purple {
     color: $bfc-purple;
@@ -20,4 +22,8 @@
 
 p b {
     font-family: $boston-bold;
+}
+
+.text-boston-semibold {
+    font-family: $boston-semibold;
 }
