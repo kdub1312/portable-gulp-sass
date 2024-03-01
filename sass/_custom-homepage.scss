@@ -80,6 +80,21 @@
   }
 }
 
+.section-b {
+  .row--cards::before {
+    overflow-x: visible;
+    background-image: url("../images/chevron--horizontal-green.svg");
+    background-size: 100vw auto;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    position:absolute;
+    height: 70px;
+    width: 100vw;
+    left: calc(((100vw - 1320px) / 2) * -1);
+    bottom: 518px;
+  }
+}
+
 .col-center--m {
   @media #{$mobile} {
     display: block;
@@ -91,5 +106,46 @@
 .mr-16_7 {
   @media #{$desktop}{
     margin-right: -16.6666667%;
+  }
+}
+
+div[class*="card--"] {
+  > .card--inner {
+    box-shadow: 0 3px 24px 0 rgba(0,0,0,.16);
+    background-color: $white;
+  }
+  h3 {
+    color: $white;
+    padding: 16px 0;
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+    font-family: $boston-bold;
+    margin-bottom: 0;
+  }
+  p {
+    padding: 24px 30px;
+    text-align: center;
+  }
+}
+.card {
+  &--green h3 {
+    background-color: $bfc-green;
+  }
+  &--purple h3 {
+    background-color: $bfc-purple;
+  }
+  &--orange h3 {
+    background-color: $bfc-orange;
+  }
+}
+
+.footer-2024 {
+  background-color: $bfc-gray;
+
+  @media #{$small-desktop-up} {
+    margin-left: calc((100vw - 1320px) / 2 * -1);
+    margin-right: calc((100vw - 1320px) / 2 * -1);
+    width: 100vw;
   }
 }
